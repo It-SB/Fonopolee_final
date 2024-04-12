@@ -55,7 +55,7 @@ const showModal = (index) => {
 
   $introModalTitle.innerText = data.subtitle || data.title;
   $introModalDescription.innerText = data.description;
-  $introModalIcon.className = `fas fa-${data.icon} fa-6x`;
+  $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
   $introModal.classList.add("is-active");
 
   if (isOverflowing($introModalDescription)) {

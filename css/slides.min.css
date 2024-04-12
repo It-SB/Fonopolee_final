@@ -1775,6 +1775,102 @@ p.uppercase {
 
 .fix-7-12 {
     max-width: 650px !important;
+    position: relative;
+    top: 20em;
+    left: -20em;
+}
+
+
+.button {
+    position: relative;
+    /* left: em; */
+    top: -40em;
+  }
+
+  
+  .button,
+  .container .wrap1,
+  .slides-form.center input,
+  .slides-form.center textarea {
+      text-align: center;
+  }
+  
+  
+
+  
+  .container .wrap1 .spaceWrap,
+  .container .wrap1.spaceWrap,
+  .container .wrap1:not(.noSpaces) {
+      padding: 120px calc(8% + 15px);
+  }
+  
+  .container .wrap1 * {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+  }
+
+@media screen and (max-width: 768px) {
+    .fix-7-12 {
+        top: 10em;
+        left: -10em;
+    }
+    .cover{
+        display:block !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slides.desktopSwipe .slide .container .wrap1 {
+        cursor: inherit;
+    }
+    
+    .button,
+    .container .wrap1,
+    .slides-form.center input,
+    .slides-form.center textarea {
+        text-align: center;
+    }
+    
+    
+    .container .wrap1 {
+        display: table-cell;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+    
+    .container .wrap1 .spaceWrap,
+    .container .wrap1.spaceWrap,
+    .container .wrap1:not(.noSpaces) {
+        padding: 120px calc(8% + 15px);
+    }
+    
+    .container .wrap1 * {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+    .fix-7-12 {
+        height: 100%;
+        top: 10em;
+        left: 1em;
+    }
+    .button {
+        position: relative;
+        /* left: em; */
+        top: -24em;
+      }
+}
+
+
+.image{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    top: -40em;
+    right: -60em;
 }
 
 .fix-8-12 {
@@ -3791,14 +3887,27 @@ html.mobile .showForMobileInline {
   font-size: 1.5em;
   transition: background 0.3s, color 0.3s;
 }
+.button2 {
+    display: inline-block;
+    background-color: var(--red-color);
+    padding: 1rem 1.5rem;
+    border-radius: 4rem; /* Adjusted border-radius */
+    border: 2px solid rgb(176, 235, 195); /* Combined border shorthand */
+    color: var(--first-color);
+    font-size: 1.5em;
+    transition: background 0.3s, color 0.3s;
+  }
 
 
 .about__description {
     font-size: 1.3em;
-    font-weight: bold; /* Changed 'font' to 'font-weight' */
+    font-weight: bold;
+    color: #8ec5a7;
     margin-bottom: 2em;
-    align-items: start;
+    text-align: left; /* Align text to the left */
+    position: relative;
 }
+
 
 
 
