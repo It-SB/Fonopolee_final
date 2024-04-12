@@ -1659,19 +1659,19 @@ p.uppercase {
 
 .dropdown.share li:after,
 .fade-1 .content {
-    background: rgba(0, 0, 0, 0.1);
+    /* background: rgba(0, 0, 0, 0.1); */
 }
 
 .fade-2 .content {
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
 }
 
 .fade-3 .content {
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
 }
 
 .fade-4 .content {
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .fade-5 .content {
@@ -1713,7 +1713,7 @@ p.uppercase {
 .container .wrap .spaceWrap,
 .container .wrap.spaceWrap,
 .container .wrap:not(.noSpaces) {
-    padding: 120px calc(8% + 15px);
+    padding: 60px calc(8% + 5px);
 }
 
 .container .wrap * {
@@ -1801,7 +1801,7 @@ p.uppercase {
   .container .wrap1 .spaceWrap,
   .container .wrap1.spaceWrap,
   .container .wrap1:not(.noSpaces) {
-      padding: 120px calc(8% + 15px);
+      padding: 60px calc(8% + 15px);
   }
   
   .container .wrap1 * {
@@ -1862,15 +1862,18 @@ p.uppercase {
         /* left: em; */
         top: -24em;
       }
+      .image{
+        display: none !important;
+    }
 }
 
 
 .image{
     position: relative;
-    height: 80%;
-    width: 80%;
-    top: -40em;
-    right: -60em;
+    height: 950px;
+    width: 800px;
+    top: -80em;
+    right: -160em;
 }
 
 .fix-8-12 {
@@ -5107,7 +5110,7 @@ html.mobile .showForMobileInline {
 
 .mobile .simplifiedMobile .container,
 .scroll .container {
-    height: 100vh;
+    height: 60vh;
 }
 
 .mobile .slide.autoHeight .simplifiedMobile .container,
@@ -5122,7 +5125,7 @@ html.mobile .showForMobileInline {
 
 .mobile .simplifiedMobile .slide:not(.autoHeight) .background,
 .scroll .slide:not(.autoHeight) .background {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .mobile .simplifiedMobile .slide,
@@ -6626,7 +6629,7 @@ body {
 }
 
 .grid+.grid {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .grid:after {
