@@ -70,7 +70,9 @@ html {
   height: 100%;
   position: absolute;
 }
-.map{
+.maps{
+  /* position:static; */
+  /* top: -50em; */
   /* padding-bottom: 5em; */
 }
 .module {
@@ -242,7 +244,6 @@ html {
   /* background: url("https://making-the-web.com/sites/default/files/clipart/156536/green-leaf-icon-156536-2289922.png") no-repeat center; */
   background-size: contain;
   transform: rotate(40deg);
-  top: 4em;
   right: -4.5em;
   opacity: 0.3;
 }
