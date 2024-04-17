@@ -365,15 +365,7 @@ html {
 }
 
 @media screen and (max-width: 980px) {
-  .layer {
-    scale: 0.5;
 
-    position: absolute;
-  }
-  .modal {
-    scale: 0.9;
-    font-size: 34px;
-  }
   .is-strong {
     font-weight: 700;
     font-size: 16px;
