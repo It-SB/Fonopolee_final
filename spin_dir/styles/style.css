@@ -318,6 +318,26 @@ html {
 .modal .modal-card-body p.is-overflowing {
   border-bottom: solid 4px #880620;
 }
+
+.modal .modal-card-body2,
+.modal .modal-card-foot {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+.modal .modal-card-body2 p {
+  min-height: 360px;
+  max-height: 360px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin: 1em;
+  margin-right: 0;
+  margin-bottom: 0;
+  overflow: auto;
+}
+.modal .modal-card-body2 p.is-overflowing {
+  border-bottom: solid 4px #880620;
+}
 .modal .modal-card-foot button {
   background: rgb(176, 235, 195);
   color: #ffffff;
@@ -403,3 +423,4 @@ html {
   background-color: var(--white-color);
   color: var(--body-color);
 }
+

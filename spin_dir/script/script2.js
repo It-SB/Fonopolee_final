@@ -1,5 +1,6 @@
 const $map = document.querySelector(".map");
 const $nodes = document.querySelectorAll(".node");
+const $nodes2 = document.querySelectorAll(".node2");
 const $introModal = document.getElementById("introModal");
 const $introModalBackground = document.getElementById("introModalBackground");
 const $introModalClose = document.getElementById("introModalClose");
@@ -12,7 +13,7 @@ const $introModalNext = document.getElementById("introModalNext");
 
 let moduleData = [];
 let currentIndex = 0;
-let maxIndex = 6;
+let maxIndex =  11;
 
 // Close event binding
 [$introModalBackground, $introModalClose].forEach((elem) => {
@@ -50,6 +51,26 @@ $nodes.forEach(($node) => {
   });
 });
 
+$nodes2.forEach(($node) => {
+    // Store module data in array
+    moduleData[$node.dataset.index] = JSON.parse($node.dataset.info);
+  
+    // Hover
+    ["mouseenter", "mouseleave"].forEach((mouseEvent) => {
+      $node.addEventListener(mouseEvent, () => {
+        // Toggle pause
+        [$map, $node, $node.parentNode].forEach(($element) => {
+          $element.classList.toggle("pause");
+        });
+      });
+    });
+  
+    // Click
+    $node.addEventListener("click", () => {
+      showModal($node.dataset.index);
+    });
+  });
+
 const showModal = (index) => {
   currentIndex = Number(index);
   const data = moduleData[currentIndex];
@@ -57,8 +78,7 @@ const showModal = (index) => {
   $introModalTitle.innerText = data.subtitle || data.title;
   // $introModalDescription.className = `${data.image}`;
   $introModalDescription.src = `../../assets/data/${data.image}`;
-  $introModalDescription2.src = `../../assets/data/${data.image}`;
-  
+//   $introModalDescription2.src = `../../assets/data/${data.image}`;
   $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
   $introModal.classList.add("is-active");
 
