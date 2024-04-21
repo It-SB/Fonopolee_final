@@ -78,7 +78,7 @@ const showModal = (index) => {
   $introModalTitle.innerText = data.subtitle || data.title;
   // $introModalDescription.className = `${data.image}`;
   $introModalDescription.src = `../../assets/data/${data.image}`;
-//   $introModalDescription2.src = `../../assets/data/${data.image}`;
+  $introModalDescription2.src = `../../assets/data/${data.image}`;
   $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
   $introModal.classList.add("is-active");
 
