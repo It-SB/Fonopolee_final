@@ -13635,3 +13635,12 @@ span.next-arrow svg {
     max-height: 100vh; /* Maximum height of the scrollable area */
   }
 
+
+  /* CSS for small screens */
+@media screen and (max-width: 1024px) {
+    .col-3-12.hide1,
+    .col-3-12.hide2 {
+      display: none;
+    }
+  }
+  
