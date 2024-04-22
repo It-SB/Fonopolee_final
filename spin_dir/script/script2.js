@@ -1,22 +1,20 @@
 const $map = document.querySelector(".map");
 const $nodes = document.querySelectorAll(".node");
-const $nodes2 = document.querySelectorAll(".node2");
 const $introModal = document.getElementById("introModal");
-const $introModalBackground = document.getElementById("introModalBackground");
+// const $introModalBackground = document.getElementById("introModalBackground");
 const $introModalClose = document.getElementById("introModalClose");
 const $introModalTitle = document.getElementById("introModalTitle");
 const $introModalDescription = document.getElementById("introModalDescription");
-const $introModalDescription2 = document.getElementById("introModalDescription2");
 const $introModalIcon = document.getElementById("introModalIcon");
 const $introModalPrev = document.getElementById("introModalPrev");
 const $introModalNext = document.getElementById("introModalNext");
 
 let moduleData = [];
 let currentIndex = 0;
-let maxIndex =  11;
+let maxIndex = 6;
 
 // Close event binding
-[$introModalBackground, $introModalClose].forEach((elem) => {
+[ $introModalClose].forEach((elem) => {
   elem.addEventListener("click", () => {
     $introModal.classList.remove("is-active");
   });
@@ -51,35 +49,13 @@ $nodes.forEach(($node) => {
   });
 });
 
-$nodes2.forEach(($node) => {
-    // Store module data in array
-    moduleData[$node.dataset.index] = JSON.parse($node.dataset.info);
-  
-    // Hover
-    ["mouseenter", "mouseleave"].forEach((mouseEvent) => {
-      $node.addEventListener(mouseEvent, () => {
-        // Toggle pause
-        [$map, $node, $node.parentNode].forEach(($element) => {
-          $element.classList.toggle("pause");
-        });
-      });
-    });
-  
-    // Click
-    $node.addEventListener("click", () => {
-      showModal($node.dataset.index);
-    });
-  });
-
 const showModal = (index) => {
   currentIndex = Number(index);
   const data = moduleData[currentIndex];
 
   $introModalTitle.innerText = data.subtitle || data.title;
-  // $introModalDescription.className = `${data.image}`;
-  $introModalDescription.src = `../../assets/data/${data.image}`;
-//   $introModalDescription2.src = `../../assets/data/${data.image}`;
-  $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
+  $introModalDescription.innerText = data.description;
+  $introModalIcon.className = `fas fa-${data.icon} fa-10x`;
   $introModal.classList.add("is-active");
 
   if (isOverflowing($introModalDescription)) {
@@ -87,14 +63,7 @@ const showModal = (index) => {
   } else {
     $introModalDescription.classList.remove("is-overflowing");
   }
-
-  if (isOverflowing($introModalDescription2)) {
-    $introModalDescription2.classList.add("is-overflowing");
-  } else {
-    $introModalDescription2.classList.remove("is-overflowing");
-  }
 };
-
 
 const isOverflowing = (elem) => {
   return elem.scrollHeight > elem.clientHeight;

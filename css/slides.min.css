@@ -13629,3 +13629,9 @@ span.next-arrow svg {
 
 /* FOR CIRCLES */
 
+
+.scrollable-content {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100vh; /* Maximum height of the scrollable area */
+  }
+
