@@ -406,7 +406,7 @@ background-color: red;
   }
 }
 
-
+/* 
 @media screen and (max-width: 400px) {
   .layer {
     scale: 0.2;
@@ -417,7 +417,7 @@ background-color: red;
   .modal {
     scale: 2;
   }
-}
+} */
 
 .button {
   display: inline-block;
