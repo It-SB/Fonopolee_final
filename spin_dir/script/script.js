@@ -95,11 +95,6 @@ const showModal = (index) => {
     $introModalDescription.classList.remove("is-overflowing");
   }
 
-  if (isOverflowing($introModalDescription2)) {
-    $introModalDescription2.classList.add("is-overflowing");
-  } else {
-    $introModalDescription2.classList.remove("is-overflowing");
-  }
 };
 
 const showModal2 = (index) => {
@@ -111,12 +106,6 @@ const showModal2 = (index) => {
 
   $introModalIcon2.className = `fas fa-${data.icon} fa-8x`;
   $introModal2.classList.add("is-active");
-
-  if (isOverflowing($introModalDescription2)) {
-    $introModalDescription2.classList.add("is-overflowing");
-  } else {
-    $introModalDescription2.classList.remove("is-overflowing");
-  }
 
   if (isOverflowing($introModalDescription2)) {
     $introModalDescription2.classList.add("is-overflowing");
