@@ -84,7 +84,7 @@ const showModal = (index) => {
 
   $introModalTitle.innerText = data.subtitle || data.title;
   $introModalDescription.src = `../assets/data/${data.image}`;
-  $introModalDescription2.src = `../assets/data/${data.image}`;
+  // $introModalDescription2.src = `../assets/data/${data.image}`;
 
   $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
   $introModal.classList.add("is-active");
@@ -107,7 +107,6 @@ const showModal2 = (index) => {
   const data = moduleData2[currentIndex];
 
   $introModalTitle2.innerText = data.subtitle || data.title;
-  $introModalDescription2.src = `../assets/data/${data.image}`;
   $introModalDescription2.src = `../assets/data/${data.image}`;
 
   $introModalIcon2.className = `fas fa-${data.icon} fa-8x`;
