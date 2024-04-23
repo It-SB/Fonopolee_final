@@ -15,9 +15,7 @@ const $introModalNext = document.getElementById("introModalNext");
 const $introModalBackground2 = document.getElementById("introModalBackground2");
 const $introModalClose2 = document.getElementById("introModalClose2");
 const $introModalTitle2 = document.getElementById("introModalTitle2");
-const $introModalDescription2 = document.getElementById(
-  "introModalDescription2"
-);
+const $introModalDescription2 = document.getElementById("introModalDescription2");
 const $introModalIcon2 = document.getElementById("introModalIcon2");
 const $introModalPrev2 = document.getElementById("introModalPrev2");
 const $introModalNext2 = document.getElementById("introModalNext2");
@@ -83,7 +81,7 @@ const showModal = (index) => {
   const data = moduleData[currentIndex];
 
   $introModalTitle.innerText = data.subtitle || data.title;
-  $introModalDescription.src = `../assets/data/${data.image}`;
+  $introModalDescription.src = `.../assets/data/${data.image}`;
   // $introModalDescription2.src = `../assets/data/${data.image}`;
 
   $introModalIcon.className = `fas fa-${data.icon} fa-8x`;
@@ -102,7 +100,7 @@ const showModal2 = (index) => {
   const data = moduleData2[currentIndex];
 
   $introModalTitle2.innerText = data.subtitle || data.title;
-  $introModalDescription2.src = `assets/data/${data.image}`;
+  $introModalDescription2.src = `.../assets/data/${data.image}`;
 
   $introModalIcon2.className = `fas fa-${data.icon} fa-8x`;
   $introModal2.classList.add("is-active");
