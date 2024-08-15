@@ -90,7 +90,7 @@ background-color: red;
   display: block;
   width: calc(100% - 6em);
   position: absolute;
-  border-bottom: dotted 8px #ee2347;
+  /* border-bottom: dotted 8px #ee2347; */
   top: 50%;
   left: 6em;
   margin-top: -4px;
@@ -172,8 +172,8 @@ background-color: red;
 
 .circle {
   color: white;
-  width: 12em;
-  height: 12em;
+  width: 14em;
+  height: 14em;
   border-radius: 50%;
   position: relative;
   border: solid 3px rgb(176, 235, 195);
@@ -219,7 +219,7 @@ background-color: red;
 }
 .circle.is-second {
   background: none;
-  border: dotted 1px #05bbc1;
+  /* border: dotted 1px #05bbc1; */
   width: 36em;
   height: 36em;
 }
@@ -232,7 +232,7 @@ background-color: red;
   animation: spin 192s linear infinite reverse;
 }
 .circle.is-third {
-  border-color: rgb(238, 35, 71);
+  /* border-color: rgb(238, 35, 71); */
 }
 
 .leaf {
@@ -315,6 +315,10 @@ background-color: red;
 }
 .modal .modal-card-body p.is-overflowing {
   border-bottom: solid 4px #880620;
+}
+
+.hide{
+  visibility: hidden;
 }
 
 .modal .modal-card-body2,
