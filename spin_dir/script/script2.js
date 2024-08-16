@@ -11,7 +11,7 @@ const $introModalNext = document.getElementById("introModalNext");
 
 let moduleData = [];
 let currentIndex = 0;
-let maxIndex = 6;
+let maxIndex = 11;
 
 // Close event binding
 [ $introModalClose].forEach((elem) => {
